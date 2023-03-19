@@ -1,0 +1,239 @@
+﻿*, header ul {
+    padding: 0px;
+}
+
+li, #clients-title, #sub-title {
+    text-align: center;
+}
+
+body {
+    background-image: url(../images/room2.jpg), url(../images/room3.jpg);
+    background-repeat: repeat-y, repeat-y, repeat-y;
+    background-position: top left, top right, center;
+    background-size: 20%, 20%;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    width: 1000px;
+    min-width: 300px;
+    min-height: 800px;
+    margin: 0px auto 0px auto;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,230,210,1) 68%, rgba(255,255,255,1) 100%);
+    border-radius: 15px;
+    border-left: 1px solid #ac5d00;
+    border-right: 1px solid #ac5d00;
+}
+
+header ul {
+    display: flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,230,210,1) 68%, rgba(255,204,166,1) 100%);
+    border-radius: 5px;
+    font: 7px Lucida Console;
+    padding-top: 50px;
+}
+
+     header li {
+        list-style: none;
+        flex: 1;
+     }
+
+     header li a {
+         text-decoration: none;
+         color: #006b72;
+         padding: 30px;
+     }
+
+     li:hover {
+         background-color: #ffecd7;
+     }
+
+#sub-title {
+    color: black;
+}
+
+/*#region title-column*/
+
+/*horrible, I know.*/
+#column-clients, #column-rooms, #column-history,
+#column-employees {
+    margin: 25px 0px 0px 20px;
+    font: small-caps bold 14px Georgia, serif;
+}
+
+    #column-clients li {
+        display: inline-block;
+        margin-right: 110px;
+    }
+        
+        #column-clients #three{
+            margin-left: 30px;
+        }
+
+    #column-rooms li {
+        display: inline-block;
+        margin-right: 77px;
+    }
+
+    #column-rooms li:last-child {
+        margin-left: 65px;
+    }
+
+        #column-rooms #three {
+            margin-left: 40px;
+            margin-right: 140px;
+        }
+
+    #column-history li {
+        display: inline-block;
+        margin-right: 90px;
+        font-size: 12px;
+    }
+
+        #column-history li:first-child {
+            margin-right: 100px;
+            font-size: 12px;
+        }
+
+        #column-history #four,
+        #column-history #three {
+            margin-right: 110px;
+        }
+        
+
+    #column-employees li {
+        display: inline-block;
+        margin-right: 80px;
+    }
+
+        #column-employees li:last-child{
+            margin-left: 25px;
+        }
+
+        #column-employees #three {
+            margin-left: 30px;
+        }
+/*#endregion*/
+
+table {
+    border: 1px double #bbbbbb;
+    margin: 5px auto 5px auto;
+    width: 90%;
+    color: black;
+}
+
+    td {
+        padding: 5px;
+        width: 120px;
+    }
+
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    height: 150px;
+    background: rgb(255,224,224);
+    background: linear-gradient(0deg, rgba(255,224,224,1) 0%, rgba(255,230,210,1) 30%, rgba(255,255,255,1) 100%);
+}
+    footer ul {  margin: 10px auto; }
+   
+    footer ul li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #b1b1b1;
+    }
+
+
+/* Home page */
+
+#content h3 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#task-text {
+    margin: 10px 50px 500px 50px;
+    text-align: justify;
+    font-family: URW Chancery L, cursive;
+}
+
+
+/* Clients page */
+/*#region add-form*/
+
+#addForm {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    color: #0000cc;
+    font-family: URW Chancery L, cursive;
+    font-size: 13px;
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#openForm {
+    text-decoration : none; 
+    color: black;
+    border: 1px solid black;
+    margin: 10px 0px 0px 40px;
+    padding: 3px;
+}
+
+    #addForm:target {
+        display: block;
+    }
+
+.close {
+    display: inline-block;
+    border: 1px solid #0000cc;
+    color: black;
+    padding: 0 12px;
+    margin: 2px;
+    text-decoration: none;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+    .close:hover {
+        background: #e6e6ff;
+    }
+/*#endregion*/
+
+form, div.search {
+    margin: 0px 20px;
+}
+
+    form p {
+        display: inline;
+    }
+
+    form > input {
+        margin: 10px auto;
+    }
+
+    #choice {
+        display: block;
+        margin: 5px 0px 5px 20px;
+    }
+
+
+#clearboth {
+    clear: both;
+}
+
+
+

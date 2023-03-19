@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css"  rel="stylesheet"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div id="wrapper">
+    <!--меню-->
+        <header>
+            <div id="menu">
+                <ul>
+                    <li><a href="~/home" class="navbar-brand">Главная</a></li>
+                    <li><a href="~/api/clients" class="navbar-brand">Клиенты</a></li>
+                    <li><a href="~/api/rooms" class="navbar-brand">Номера</a></li>
+                    <li><a href="~/api/history" class="navbar-brand">История</a></li>
+                    <li><a href="~/api/employees" class="navbar-brand">Служащие</a></li>
+                </ul>
+            </div>
+        </header>
+    <!--основной контент-->
+    <div>
+        @RenderBody()
+        <div id="clearboth"></div>
+        <footer>
+            <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Рассылка</a></li>
+                </ul>
+        </footer>
+    </div>
+    </div> <!--wrapper-->
+</body>
+</html>
